@@ -1,0 +1,20 @@
+AddType application/x-httpd-php .html
+##AddHandler php5-cgi .html
+###AddHandler application/x-httpd-php .php .html
+php_value default_charset "UTF-8"
+php_value mbstring.language "Japanese"
+php_value mbstring.http_input "UTF-8"
+php_value mbstring.http_output "UTF-8"
+php_value mbstring.internal_encoding "UTF-8"
+php_flag register_globals off
+php_flag short_open_tag on
+php_value post_max_size 50M
+php_value upload_max_filesize 50M
+php_value memory_limit 256M
+
+ErrorDocument 404 https://www.eidai-inc.co.jp/index.html
+
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /home/omiyattjp/www/.htpasswd
+require valid-user

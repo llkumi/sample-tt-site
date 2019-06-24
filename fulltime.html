@@ -1,0 +1,505 @@
+<?php
+	$pagetype = 1;
+	$slidertype = 2;
+	$relationtype = 1;
+	include "../include/method.php";
+	include "../include/uniform.php";
+
+	////////////////////////////////////////////////
+	////////////////////////////////////////////////
+	//// PDOで接続
+	////////////////////////////////////////////////
+	////////////////////////////////////////////////
+
+	/// DBに接続できない場合に備えて、例外処理の「try」を使って接続を行う
+
+	
+
+
+  	$title = "正社員採用情報";
+  	$para1 = "";
+  	$para2 = "";
+  	$para3 = "";
+  	$para4 = "";
+  	$para5 = "";
+  	PrintHeader($title, $para1, $para2, $para3, $para4, $para5);
+
+	$n1 = mt_rand(1, 5);
+	$n1 = 5;
+	$n2 = mt_rand(1, 5);
+?>
+<!-- wrapper start -->
+<div id="wrapper-patern<?php print h($n1); ?>">
+
+
+	<!-- container start -->
+	<div class="container-slide demo-2">
+
+
+		<?php
+		if ($n1 == 3) {
+	?>
+		<div id="head2" class="clearfix">
+			<h1 style="">
+				<span>
+					<a href="<?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400.png" style="width:200px;"
+							alt="EIDAI"></a>
+				</span>
+				<span style="">One for all, All for one</span>
+			</h1>
+		</div>
+		<?php } else { ?>
+		<div id="head2" class="clearfix">
+			<h1 style="color:white;">
+				<span><a href="<?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400_white.png" style="width:200px;"
+							alt="EIDAI"></a></span>
+				<span>One for all, All for one</span>
+			</h1>
+		</div>
+		<?php } ?>
+
+
+
+
+	</div>
+	<!-- container end -->
+
+
+
+	<div><img src="./images/key_28.jpg" style="width:100%;vertical-align:bottom;"></div>
+
+
+
+	<div class="wrapper-inner">
+		<div class="wrapper-inner2">
+			<div class="t-a-c">
+				<div class="font-b"
+					style="background: linear-gradient(transparent 85%, #696969 20%);;display:inline-block">採用情報
+				</div>
+				<div class="font-m">Recruitment Information</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--
+	<section class="contents">
+		<div class="contents_inner">
+			<div class="t-a-c">
+				<div class="font-b" style="background: linear-gradient(transparent 85%, #ffaa0d 20%);display:inline-block">採用情報</div>
+				<div class="font-m">Recruitment information</div>
+			</div>
+		</div>
+	</section>-->
+
+
+
+	<!-- wide box start -->
+	<div class="wrapper-inner clearfix2" style="background:white;padding:2em 0;">
+
+		<div class="item ress">
+			<div class="qa">
+				<div class="pdg10em">
+					<h2 style="font-family: 'Noto Sans JP', sans-serif;color: #666666;font-weight: bold" class="tit">
+						採用の軸は「人柄採用」です</h2>
+					<p class="space-mgb">
+						「周囲の人が何かを成し遂げる喜び　＞=　自分が何かを成し遂げる喜び」
+					</p>
+					<p class="space-mgb">自分自身が努力を積み重ね何かを成し遂げていくことは自分の自信につながり、
+						成長していく過程ではとても大切なことだと思います。しかし、人生にはこれ以上の喜びがあることを私達は知っています。それは、チームや組織として何かを成し遂げたときの喜びです。
+					</p>
+					<p class="space-mgb">英代は「One for all, All for
+						one」という旗印をかかげ、誰かを蹴落とすのではなく誰かと手を取り合うための戦いをする「共生の社会」に向かっているチームです。考える軸がいつも「自分」ばかり、という人は仕事がとても苦しく、理不尽なものに思えるかもしれません。
+					</p>
+					<p class="space-mgb">
+					</p>
+					<br>
+					<p class="space-mgb">
+						<div style=" border: solid 2px skyblue;padding:1em;" class="">
+							（1）周囲からやさしくされたい人ではなく、周囲にやさしくなれる強さをもつ人
+							<br>（2）感謝する心をもち、感謝される行動がとれる人
+							<br>（3）共に楽しみ、共に学び、共に成長していける人
+							<br>（4）大切なものを変えない勇気と、改革する情熱をもつ人
+							<br>（5）高い視座をもち、自分なりの志を育める人
+						</div>
+					</p>
+					<br>
+					<p class="space-mgb">このような志向性を持つ人が集まる会社（チーム）を作り、いい会社、いい社会を一緒に創っていきたいと思います。
+					</p>
+
+
+
+
+					<h2 class="tit"
+						style="margin-top:2em;font-family: 'Noto Sans JP', sans-serif;color: #666666;font-weight: bold">
+						目指して欲しいのは「素敵なスペシャリスト」です</h2>
+					<p class="space-mgb">
+						私達はITを通してさまざまな業界の業務支援やシステム基盤の提供、システム開発、そしてアプリケーションの提供を行っています。
+					</p>
+					<p class="space-mgb">
+						PHPもRubyもJavaもC言語も何もわからない。でもエクセルの仕事ならショートカットを多用しつつ関数・マクロで効率的な作業ができる。こういう人たちもスペシャリストの卵です。英代を構成する社員の約7割は前職がIT業界ではありません。それでも、社内研修を経て自ら学習を重ね、今は眩しいくらいに輝いています。
+					</p>
+					<p class="space-mgb">
+						人の成長が、会社の成長に繋がり、会社の成長が社会の成長につながります。私達はIT技術者である前に、まず、ひとりの人間です。社員一人ひとりには「自分も、周囲の人も幸せにする！」という想いを大切にした「素敵なスペシャリスト」になってもらいたいと思います。「失敗」は一人でもできますが、「成功」は一人ではできません。素敵な仲間たちと支え合い、清々しい達成感を味わい、いい会社、いい社会をつくっていきたいと思います。
+					</p>
+
+
+
+
+					<h2 id="meal" name="#meal" class="tit"
+						style="margin-top:2em;font-family: 'Noto Sans JP', sans-serif;color: #666666;font-weight: bold">
+						お食事会について
+					</h2>
+					<p class="space-mgb">
+						私達は多くの社員を採用することが目的ではありません。英代という会社の風土で働くことを幸せに感じる人が私達を発見し、集まってくれるとよいと考えています。
+					</p>
+					<p class="space-mgb">
+						応募していただく一人ひとりにしっかりと向き合い、一緒に未来を考え、共によき仲間として人生を送っていく。これこそが私達にとっても一番自然で、一番納得のいく採用活動だと考えています。
+					</p>
+					<p class="space-mgb">そのため、集団での「説明会」は実施せず、英代の想いをもっと知りたい人に「お食事会」の場を設けています。
+						また、仕事の事を知りたい人はアルバイト採用枠で応募してもらえれば、賃金を得ながら「人」も、「風土」も、「仕事」も知ることができます。私達の人や社風に興味をお持ちの方はぜひエントリーしてください。
+					</p>
+
+
+					<h2 id="Selectionflow" name="#Selectionflow" class="tit"
+						style="margin-top:2em;font-family: 'Noto Sans JP', sans-serif;color: #666666;font-weight: bold">
+						選考フロー</h2>
+					<p class="space-mgb">
+						下図のような流れとなります。募集要項の応募フォームから必要事項を入力し送信すると、WEB適性診断のURLが届きますので、48時間以内にWEB適性診断を受けてください。３営業日以内に面接日程調整のメールが届き、面接に進みます。
+					</p>
+					<br>
+					<div class="pdg10em">
+						<ol class="work_flow">
+							<li>応募フォーム送信</li>
+							<li>適性診断</li>
+							<li>面接候補日ご連絡</li>
+							<li>面接</li>
+							<li>選考結果通知</li>
+						</ol>
+
+					</div>
+				</div>
+			</div>
+			<div class="wrapper-inner clearfix2" style="background:white;padding:2em 0;"></div>
+			<div class="qa">
+				<div class="pdg10em">
+					<p id="ar" name="#ar" class="bosyuu"
+						style="font-family: 'Noto Sans JP', sans-serif;color: #666666;font-weight: bold">募集要項</p>
+					<div id="container-main">
+						<div class="accordion-container">
+
+							<a href="#" style="color:initial; text-decoration:initial;" class="accordion-titulo">
+								<p style="color: #666666;">正社員</p><span class="toggle-icon"></span>
+							</a>
+							<div class="accordion-content">
+								<table class="uk-table uk-table-responsive uk-table-divider">
+									<thead>
+									</thead>
+									<tbody>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">勤務地</td>
+											<td>本社： 東京都墨田区両国2-10-14 両国シティコア9F <br>その他プロジェクト現場：
+												東京、千葉、埼玉、神奈川の現場
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">勤務時間</td>
+											<td>9:00-18:00（実労8時間）
+												<br>※プロジェクトで現場に入る場合は、現場の勤務状況をみて別途調整あり
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">休日休暇</td>
+											<td>週休2日制（土曜・日曜）、祝日、夏期休暇、年末年始休暇など
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">各種保険</td>
+											<td>健康保険、厚生年金保険、雇用保険、労災保険</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">諸手当</td>
+											<td>住宅手当
+												<br>配偶者手当
+												<br>子ども手当
+												<br>資格手当（月額上限3万円/月）※初回受検費用を支援
+												<br>管理手当（1名の部下につき 6,000円/月）
+												<br>その他の福利厚生（年1回社員旅行、月1回会食会、産休・育休制度など）
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">採用実績校</td>
+											<td>筑波大学大学院、電気通信大学、中央大学、会津大学、学習院女子大学、二松学舎大学など</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">給与等</td>
+											<td>
+												<div class="space-mga">【新卒入社】
+													<br>1) 大学院卒（学部／学科、文理不問）
+													<br> 基本給210,000円～（※入社時別途査定あり）　+　諸手当　+　賞与
+													<br>2) 大卒（学部／学科、文理不問）
+													<br> 基本給200,000円～（※入社時別途査定あり）　+　諸手当　+　賞与
+													<br>3) 専門学校卒または高校卒（情報処理/コンピュータ系）
+													<br> 基本給190,000円～（※入社時別途査定あり）　+　諸手当　+　賞与（決算賞与＆賞与）
+												</div>
+												<div class="space-mga">
+													<br>【中途入社】
+													<br>1) 直近3年以上の開発実務経験ありの場合：
+													<br>基本給200,000円～400,000円（※入社時別途査定あり）　+　諸手当　+　賞与
+													<br> 2) 開発実務経験なしの場合：
+													<br>基本給180,000円～220,000円（※入社時別途査定あり）　+　諸手当　+　賞与
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">仕事内容</td>
+											<td>・SFA、CRM、BIツールの製品サポート（ヘルプデスク）支援、カスタマイズ
+												<br>・CRM、CMSの企画、開発、運用保守
+												<br>・大型システムの開発支援
+												<br>・大型システムのテスト仕様書作成、テスト業務、ソース改修
+												<br>・社内システム、イントラネットの構築やこれらの保守運用（監視・改修作業）
+												<br>・各種アプリケーションの企画、開発、運用保守
+												<br>・AIを用いたシステム開発支援
+												<br> ・BPO業務のIT支援
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">歓迎する技術系の知識・経験
+											</td>
+											<td>
+												<div class="space-mga">
+													・C#を用いた開発経験または知識
+													<br>・Java、C言語を用いた開発経験または知識
+													<br>・Java、OracleDBを用いた開発経験または知識
+													<br>・PHP、MySQLを用いた開発経験または知識
+													<br>・SQLを用いた開発経験または知識
+													<br>・ネットワーク環境の設計・構築・運用経験または知識
+													<br>・スマートフォン向けアプリケーションの開発経験または知識
+													<br>・テスト仕様書を作成する業務経験
+													<br>・エクセルの関数、VBAの業務経験
+												</div>
+												
+												
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">歓迎する人物像</td>
+											<td>①　周囲からやさしくされたい人ではなく、周囲にやさしくなれる強さをもつ人
+												<br>②　感謝する心をもち、感謝される行動がとれる人
+												<br>③　共に楽しみ、共に学び、共に成長していける人
+												<br>④　大切なものを変えない勇気と、改革する情熱をもつ人
+												<br>⑤　高い視座をもち、自分なりの志を育める人
+											</td>
+										</tr>
+										<tr style="border-bottom: 1px solid #e5e5e5;">
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">応募資格</td>
+											<td>以下いずれかを卒業・卒業見込みの方<br>
+												<br>四年制大学（学部／学科、文理不問）
+												<br>二年制大学（学部／学科、文理不問）
+												<br>大学院（専攻、研究分野不問）
+												<br>各種専門学校
+												<br>高等学校
+												<br>※既卒の方（第二新卒）も応募可能です。
+												<br>※通年で入社可能です。（入社時期は応相談）
+										</tr>
+									</tbody>
+								</table>
+
+								<a href="<?php print h(D_SSL); ?>recruit_form.html?fulltime" target="_blank"
+									class="btn-flat-vertical-border">応募フォーム入力画面へ</a>
+
+							</div>
+
+						</div>
+
+						<div class="accordion-container">
+							<a href="#" style="color:initial; text-decoration:initial;" class="accordion-titulo">
+								<p style="color: #666666;">アルバイト</p><span class="toggle-icon"></span>
+							</a>
+							<div class="accordion-content">
+								<table class="uk-table uk-table-responsive uk-table-divider">
+									<thead>
+									</thead>
+									<tbody>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">勤務地</td>
+											<td>本社： 東京都墨田区両国2-10-14 両国シティコア9F <br>または都内のプロジェクト現場
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">応募資格</td>
+											<td>週5日以上、1日5時間以上勤務できる方<br>※大学生、大学院生可。高校生以下の学生は不可。
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">休日</td>
+											<td>土、日、祝祭日
+												<br>日曜日と祝祭日が重なる場合はその翌日（振替休日）
+												<br>夏季休暇　3日間（7月～9月中）
+												<br>年末年始休暇　5日間（12月30日、31日、1月1日～3日）
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">休暇</td>
+											<td>年次有給休暇</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">賃金</td>
+											<td>基本賃金：時間給　1,600円
+												<br>交通費：規定支給（月上限2万円）
+												<br>賃金締切日支払日：末日締　翌月５日払
+												<br>昇給：有（※勤務態度、取得技能、勤務成績によって）
+												<br>退職金：無
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">仕事内容</td>
+											<td>・CRM、CMSの企画、開発、運用保守
+												<br>・WEBサイト開発やプロモーション業務
+												<br>・システムの開発
+												<br>・システムのテスト仕様書作成、テスト業務、ソース改修
+												<br>・各種アプリケーションの企画、開発、運用保守
+												<br>・AIを用いたシステム開発
+												<br>・BPO業務のIT支援
+											</td>
+										</tr>
+										<tr>
+											<td style="background-color:#fff6e5;width: 20%;height: 60px;">歓迎する技術系の知識・経験
+											</td>
+											<td>
+												<div class="space-mga">
+													・C#を用いた開発経験または知識
+													<br>・Java、C言語を用いた開発経験または知識
+													<br>・Java、OracleDBを用いた開発経験または知識
+													<br>・PHP、MySQLを用いた開発経験または知識
+													<br>・SQLを用いた開発経験または知識
+													<br>・ネットワーク環境の設計・構築・運用経験または知識
+													<br>・スマートフォン向けアプリケーションの開発経験または知識
+													<br>・テスト仕様書を作成する業務経験
+													<br>・エクセルの関数、VBAの業務経験
+												</div>
+												
+											</td>
+										</tr>
+
+									</tbody>
+								</table>
+
+								<a href="<?php print h(D_SSL); ?>recruit_form.html?parttime" target="_blank"
+									class="btn-flat-vertical-border">応募フォーム入力画面へ</a>
+							</div>
+						</div>
+
+						<div class="accordion-container">
+							<a href="#" style="color:initial; text-decoration:initial;" class="accordion-titulo">
+								<p style="color: #666666;">エントリーのみ</p><span class="toggle-icon"></span>
+							</a>
+							<div class="accordion-content">
+								<p class="space-mgb">このような方におすすめです。</p>
+
+								<p class="space-mgb" style="padding-top: 10px;">・学部3年以下だが就活の一環として情報を知りたい。</p>
+								<p class="space-mgb">・アルバイトと社員で悩んでいる</p>
+								<p class="space-mgb">・WEB適性診断を受ける時間がなかなか取れない</p>
+								<p class="space-mgb">・雰囲気を知りたい</p>
+
+								<p class="space-mgb" style="padding: 10px;">
+									エントリーのみ　に応募していただいた方はメールに英代の採用情報や面談の案内を送らせていただきます。</p>
+
+
+								<a href="<?php print h(D_SSL); ?>recruit_form.html?entry" target="_blank"
+									class="btn-flat-vertical-border">応募フォーム入力画面へ</a>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+	</div>
+
+	<!-- wide box end -->
+
+
+
+
+
+	<?php
+	$para1 = "";
+	$para2 = "";
+	$para3 = "";
+	PrintRelationMenu($para1, $para2, $para3);
+?>
+
+
+
+	<!-- page_wrap start -->
+	<div class="page_wrap">
+
+		<!-- page_wrap end -->
+	</div>
+	<script type="text/javascript" src="js/jquery.accordion.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript">
+		$(function () {
+
+			$('#st-accordion').accordion();
+
+		});
+	</script>
+	<script>
+		$(function () {
+			$(".accordion-titulo").click(function (e) {
+
+				e.preventDefault();
+
+				var contenido = $(this).next(".accordion-content");
+
+				if (contenido.css("display") == "none") { //open		
+					contenido.slideDown(250);
+					$(this).addClass("open");
+				}
+				else { //close		
+					contenido.slideUp(250);
+					$(this).removeClass("open");
+				}
+
+			});
+		});</script>
+
+
+
+
+
+
+	<?php
+	$para1 = "";
+	$para2 = "";
+	$para3 = "";
+	Printfooter($para1, $para2, $para3);
+?>
+
+
+
+
+
+	<!-- wrapper end -->
+</div>
+
+
+
+</body>
+
+</html>
+<?php
+	////////////////////////////////////////////////
+	//// PDO DB接続がNGの場合
+	////////////////////////////////////////////////
+	
+?>

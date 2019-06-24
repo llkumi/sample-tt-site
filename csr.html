@@ -1,0 +1,323 @@
+<?php
+	$pagetype = 1;
+	include "../include/method.php";
+	include "../include/uniform.php";
+	
+	////////////////////////////////////////////////
+	////////////////////////////////////////////////
+	//// PDOで接続
+	////////////////////////////////////////////////
+	////////////////////////////////////////////////
+	
+	/// DBに接続できない場合に備えて、例外処理の「try」を使って接続を行う
+	
+	
+  	
+  	$title = "社会貢献活動";
+  	$para1 = "";
+  	$para2 = "";
+  	$para3 = "";
+  	$para4 = "";
+  	$para5 = "";
+  	PrintHeader($title, $para1, $para2, $para3, $para4, $para5);
+
+	$n1 = mt_rand(1, 5);
+	$n1 = 5;
+	$n2 = mt_rand(1, 5);
+?>
+<!-- wrapper start -->
+<div id="wrapper-patern<?php print h($n1); ?>">
+
+
+	<!-- container start -->
+	<div class="container-slide demo-2">
+
+
+		<?php
+	if ($n1 == 3) {
+?>
+		<div id="head2" class="clearfix">
+			<h1 style="">
+				<span>
+					<a href="<?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400.png" style="width:200px;"
+							alt="EIDAI"></a>
+				</span>
+				<span style="">One for all, All for one</span>
+			</h1>
+		</div>
+		<?php } else { ?>
+		<div id="head2" class="clearfix">
+			<h1 style="color:white;">
+				<span><a href="<?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400_white.png" style="width:200px;"
+							alt="EIDAI"></a></span>
+				<span>One for all, All for one</span>
+			</h1>
+		</div>
+		<?php } ?>
+
+
+
+
+	</div>
+	<!-- container end -->
+
+
+
+	<div><img src="./images/key_27.jpg" style="width:100%;vertical-align:bottom;"></div>
+
+
+
+	<div class="wrapper-inner">
+		<div class="wrapper-inner2">
+			<div class="t-a-c">
+				<div class="font-b"
+					style="background: linear-gradient(transparent 85%, #ffaa0d 20%);display:inline-block">社会貢献活動</div>
+				<div class="font-m">Social Contribution Activities</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- wide box start -->
+	<div class="wrapper-inner clearfix2" style="padding:2em 0;">
+
+		<div class="item js-matchHeigtht">
+			<div class="qa ress">
+				<div class="pdg10em">
+					<h2 class="tit">英代の社会貢献活動</h2>
+
+					<div class="clearfix2">
+
+						<div class="item">
+							<p class="space-mgb">
+								Philanthropy（フィランソロピー）と呼べるほどの活動ではないですが、英代株式会社では、私達が持ちうる時間、資金、知識、労働を「私達らしい」方法として社会に提供し貢献しています。
+							</p>
+							<p class="space-mgb">
+									そのひとつがNBS（ニュービジネスサロン）という取組です。</p>
+									<p class="space-mgb">
+									2011年にNBSを8名の中小企業経営者とともにスタートさせました。
+									「One for all, All for one」の想いをひとつに、手を取り合う共生の社会実現に向けて活動を行っています。
+									2ヶ月に1回のサービスや製品の審査を行う「審査会（定例会）」の開催や、
+									企業と企業、人と企業、人と人をつなげる活動として、高校生や大学生に向けてイベントを開催、また海外の大学と提携をして学生が日本で働くための架け橋もつくりました。
+									業種業界や規模、個人の役職などの壁を越えた勉強会やサークル活動も盛んです。</p>
+						</div>
+
+						<div class="item">
+							<p class="space-mgb">
+									NBSの旗印、理念は私達の会社と同じです。
+									英代はNBSの活動を企画し、実行し、運営する要の「NBS運営事務局」です。
+									創設当時の加盟企業数は12社でしたが、2019年4月時点では215社にまで広がりました。
+									
+							</p>
+						</div>
+
+						<div class="item">
+							<p class="space-mgb">
+									また、NBS創設とほぼ同時期に東日本大震災が発生しました。
+							</p>
+							<br>
+							<p class="space-mgb">
+									震災から3日後にプロジェクトを立ち上げ、住居を失った方々と住居を提供してくださる方々との懸け橋となる「被災者向け住居・受入先情報サイト」を開設しました。
+									NBSの幹事企業である株式会社エスピック、株式会社アクセスネット、株式会社アンカーネットワークサービス、株式会社アトラスコンピュータの代表者や社員の皆様に協力いただき、これまでのべ500名を超える被災した方々に住居情報を提供することができました。
+										
+							</p>
+						</div>
+
+						<div class="item">
+								<p class="space-mgb">
+										次に、IT技術を生かした教育貢献活動です。</p>
+										<p class="space-mgb">
+										これまでのアプリケーション開発のノウハウを活かし家庭学習習慣化ツールを開発＆リリースし、無償利用＆無償提供しています。受験を経験したお子様、保護者の方々の成功体験や失敗体験を調査し、「成果を出すために必要な力を育てる」目的でツールを完成させました。
+										「やり抜く力」、「計画性」、「実行力」、「忍耐力」などを少しずつ磨いていき、最終的には社会人になって活躍できる要素を育てていこう、という方針で進められています。今後、共感を得る方々と少しずつ磨きをかけていきたいと思います。ひとりでも多くの子どもたちの成長に貢献できればと願っています。
+								</p>
+								<br>
+								<p class="space-mgb">
+										私達の社会貢献は、まだまだ小さな活動です。今後も、社会のおかげという意識を常に抱き続け、貢献活動をつづけていきたいと思います。		
+								</p>
+						</div>
+
+					</div>
+
+					<p><img src="./img/nbs_1.jpg" class="vab"></p>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- wide box end -->
+
+
+
+	<!-- wide box start -->
+	<div class="wrapper-inner clearfix2" style="background:white;padding:2em 0;">
+
+		<div class="item4 js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">韓国永進専門大学（2018年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_01.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+		<div class="item4  js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">韓国永進専門大学（2018年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_02.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+		<div class="item4  js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">韓国永進専門大学（2014年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_03.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+		<div class="item4  js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">リベラルアーツ勉強会1（2018年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_04.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+		<div class="item4  js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">リベラルアーツ勉強会2（2018年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_05.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+		<div class="item4  js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">リーダーシップフォーラム（2014年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_12.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+		<div class="item4 js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">第31回NBS定例会（2017年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_10.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+		<div class="item4 js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">第35回NBS定例会（2018年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_07.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+		<div class="item4 js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">第36回NBS定例会（2018年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_06.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+		<div class="item4 js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">NBS先進技術勉強会：AI（2017年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_11.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+
+
+		<div class="item4 js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">第2回NBSチャリティー音楽祭（2019年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_08.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+		<div class="item4 js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">第3回企業対抗ボーリング大会（2017年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_09.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+		<div class="item4 js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">NBSアングラーズ倶楽部（2017年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_13.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+		<div class="item4 js-matchHeigtht">
+			<div class="photo-wrap">
+				<div class="photo-inner">
+					<div class="font-s photo-inner2">NBSアングラーズ倶楽部：東京湾篇（2017年）</div>
+				</div>
+				<div class="pdg10em"><img src="./img/csr_14.jpg" style="width:100%;vertical-align:bottom;"></div>
+			</div>
+		</div>
+
+
+	</div>
+	<!-- wide box end -->
+
+
+
+	<!-- page_wrap start -->
+	<div class="page_wrap">
+
+		<!-- page_wrap end -->
+	</div>
+
+
+
+
+	<?php
+	$para1 = "";
+	$para2 = "";
+	$para3 = "";
+	Printfooter($para1, $para2, $para3);
+?>
+
+
+
+
+
+
+	<!-- wrapper end -->
+</div>
+
+
+
+</body>
+
+</html>
+<?php
+	////////////////////////////////////////////////
+	//// PDO DB接続がNGの場合
+	////////////////////////////////////////////////
+	
+?>

@@ -1,0 +1,390 @@
+.flow-a,
+.flow-b,
+.flow-c, 
+.flow-d,
+.flow-e,
+.flow-f{
+  color: #fff;
+  padding: 5%;
+  height: 180px;
+  mix-blend-mode: multiply;
+}
+.flow-a {
+  background: #f66;
+  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  position: relative;
+  text-align: center;
+  margin: 0 -15px;
+}
+
+.flow-b {
+  background: #f92;
+  border-radius: 80% 30% 50% 50%/50%;
+  position: relative;
+  text-align: center;
+  margin: 0 -15px;
+}
+.flow-c {
+  background: #fc2;
+  border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+  position: relative;
+  text-align: center;
+  margin: 0 -15px;
+}
+.flow-d {
+    background: #f66;
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+    position: relative;
+    text-align: center;
+    margin: 0 -15px;
+}
+  
+  .flow-e {
+    background: #f92;
+    border-radius: 80% 30% 50% 50%/50%;
+    position: relative;
+    text-align: center;
+    margin: 0 -15px;
+}
+  .flow-f {
+    background: #fc2;
+    border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+    position: relative;
+    text-align: center;
+    margin: 0 -15px;
+}
+
+.flows{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: #ffd;
+}
+
+@media (max-width: 600px) {
+   .flows{
+    flex-direction: column;
+  }
+}
+
+.msr_flow03 {
+    color: #000000;
+    list-style: none;
+    overflow: hidden;
+  }
+  .msr_flow03 li {
+    background-color: #F8F8F8;
+    color: #1B73BA;
+    float: left;
+    font-size: 13px;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    min-width: 100px;
+    padding: 0 10px 0 40px;
+  }
+  .msr_flow03 li:first-child {
+    padding-left: 10px;
+  }
+  
+  /* 三角形下部 */
+  .msr_flow03 li::after {
+    background-color: #F8F8F8;
+    box-shadow: 2px 0 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 0 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 2px 0 0px rgba(0,0,0,0.2);
+    content: " ";
+    display: block;
+    height: 30px;
+    margin-left: auto;
+    margin-right: -30px;
+    margin-top: -30px;
+    position: relative;
+    transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    -ms-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -webkit-transform: skew(-30deg);
+    width: 30px;
+  }
+  
+  /* 三角形上部 */
+  .msr_flow03 li::before {
+    background-color: #F8F8F8;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 0 2px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 2px 0 2px rgba(0,0,0,0.2);
+    content: " ";
+    display: block;
+    float: right;
+    height: 30px;
+    margin-bottom: -30px;
+    margin-left: auto;
+    margin-right: -30px;
+    transform: skew(30deg);
+    -o-transform: skew(30deg);
+    -ms-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -webkit-transform: skew(30deg);
+    width: 30px;
+  }
+  
+  /* 右端の設定 */
+  .msr_flow03 .active {
+    background-color: #1B73BA;
+    color: #FFFFFF;
+  }
+  .msr_flow03 .active::before, .msr_flow03 .active::after {
+    background-color: #1B73BA;
+  }
+
+
+  .msr_flow05 {
+    color: #333333;
+    counter-reset: section;
+    list-style: none;
+    overflow: hidden;
+  }
+  .msr_flow05 li {
+    background:#FFFFFF;
+    border-top:1px solid #999999;
+    border-left:1px solid #999999;
+    border-bottom:1px solid #999999;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #333333;
+    display: inline-block;
+    font-size: 18px;
+    height:60px;
+    margin:0 32px 0 0;
+    min-width: 200px;
+    padding: 18px 0 0 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+  }
+  .msr_flow05 li span{
+    padding:0 0 4px
+  }
+  .msr_flow05 li:after {
+    content: "";
+    display: inline-block;
+    height:56px;
+    border-top: 1px solid #999999;
+    border-right: 1px solid #999999;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    vertical-align: middle;
+    width:56px;
+    position:absolute;
+    top:0;
+    right:-19px;
+  }
+  .msr_flow05 li:before {
+    color:#CCCCCC;
+    content:counters(section, ".") " ";
+    counter-increment: section;
+    font-size:32px;
+    left:8px;
+    line-height:1;
+    margin:-16px 0 0;
+    position:absolute;
+    top:50%;
+  }
+  /* アクティブ */
+  .msr_flow05 .active span{
+    border-bottom:1px solid #999999;
+  }
+
+
+  @media print, (min-width: 768px) {
+    .work_flow {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+    }
+    .work_flow > li {
+        min-height: 12em;
+        padding: 2em 0.5em;
+        margin: 0px;
+        border-radius: 4em;
+        background-color: #3388dd;
+        color: #fff;
+        font-size: 1.5vw;
+        text-align: center;
+        writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+        list-style: none;
+    }
+    .work_flow > li:nth-child(1):before {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        z-index: -1;
+        transform: translateY(-50%);
+        width: calc(100% - 4em);
+        height: 2em;
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        background-color: ;
+        content: "";
+    }
+    .work_flow > li:nth-child(1):after {
+        position: absolute;
+        top: 50%;
+        right: 1em;
+        z-index: -1;
+        transform: translateY(-50%);
+        width: 0px;
+        height: 0px;
+        border: 2em solid transparent;
+        border-left: 3em solid gray;
+        content: "";
+    }
+}
+@media screen and (max-width: 767px) {
+    .work_flow {
+        position: relative;
+        z-index: 1;
+    }
+    .work_flow > li {
+        max-width: 60%;
+        padding: 1em 2em;
+        margin: 0px auto;
+        border-radius: 4em;
+        background-color: #3388dd;
+        color: #fff;
+        text-align: center;
+        list-style: none;
+    }
+    .work_flow > li:nth-child(n + 2) {
+        margin: 5em auto 0px;
+    }
+    .work_flow:before {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        z-index: -1;
+        transform: translateX(-50%);
+        width: 2em;
+        height: calc(100% - 5em);
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+        background-color: gray;
+        content: "";
+    }
+    .work_flow:after {
+        position: absolute;
+        left: 50%;
+        bottom: 1.5em;
+        z-index: -1;
+        transform: translateX(-50%);
+        width: 0px;
+        height: 0px;
+        border: 2em solid transparent;
+        border-top: 3em solid gray;
+        content: "";
+    }
+}
+
+
+
+ul.flow_list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+ul.flow_list li{
+	border: 5px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    padding: 4px 10px;
+    position: relative;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+ul.flow_list li::after{bottom: -34px;
+    color:#ccc;
+    content: "▼";
+    font-size: 24px !important;
+    left: 48%;
+    position: absolute;}
+ul.flow_list li.last::after{/*最後の▼を外す*/
+    content: "";
+}
+ul.flow_list li h3::first-letter{/*1文字めを大きく*/
+    font-family: garamond,times;
+    font-size: 2rem;
+    font-style: italic;
+    letter-spacing: 0.15em;
+}
+
+
+/* 
+ * overflow and width will enclose the floats across browsers
+ */
+ dl {
+    width:90%;
+    margin:20px auto;
+    overflow:hidden;
+  }
+  /*
+   * DTs are floated to the left (in all browsers)
+   * The margin is to make the vertical borders overlap
+   */
+  dt {
+    float:left;
+    width:160px;
+    clear:both; 
+    padding:3px 20px 4px 0;
+    padding-bottom:15px;
+    margin-right:-1px;
+    border-right:1px solid #999;
+    position:relative;
+  }
+  /*
+   * DDs are floated to the right (in decent browsers)
+   */
+  dd {
+    float:right;  
+    width:519px;
+    padding:3px 0 15px 20px;
+    border-left:1px solid #999;
+    margin-left:0;
+  }
+  /*
+   * In IE 6/7, DDs cannot be floated because of a IE bug
+   * (DTs would fail to clear DDs properly)
+   * Note that if this styling works it is because of another IE bug <img draggable="false" class="emoji" alt="😉" src="https://s.w.org/images/core/emoji/11.2.0/svg/1f609.svg">
+   */
+  dd {
+    *float:none;
+    *width:auto;
+    *margin-left:180px;
+  }
+  /*
+   * some extra styling for non IE 6/7 browsers
+   */
+  dt:before {
+    content:"";
+    width:30px;
+    position:absolute;
+    border-top:1px solid #999;
+    top:-5px;
+      right:-15px;
+  }
+  dt:after {
+    content:"";
+    width:5px;
+    height:5px;
+    background:#333;
+    border:1px solid #999;
+    position:absolute;
+    border-radius:6px;
+    top:-8px;
+    right:-4px;
+  }

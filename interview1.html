@@ -1,0 +1,276 @@
+<?php
+	$pagetype = 1;
+	$slidertype = 3;
+	$relationtype = 2;
+	include "../include/method.php";
+	include "../include/uniform.php";
+	
+	////////////////////////////////////////////////
+	////////////////////////////////////////////////
+	//// PDOで接続
+	////////////////////////////////////////////////
+	////////////////////////////////////////////////
+	
+	/// DBに接続できない場合に備えて、例外処理の「try」を使って接続を行う
+	
+	
+  
+  
+  	
+  	$title = "Interview with T.YASUMA";
+  	$para1 = "";
+  	$para2 = "";
+  	$para3 = "";
+  	$para4 = "";
+  	$para5 = "";
+  	PrintHeader($title, $para1, $para2, $para3, $para4, $para5);
+
+	$n1 = mt_rand(1, 5);
+	$n1 = 5;
+	$n2 = mt_rand(1, 5);
+?>
+<!-- wrapper start -->
+<div id="wrapper-patern<?php print h($n1); ?>">
+
+
+	<!-- container start -->
+	<div class="container-slide demo-2">
+
+
+		<?php
+	if ($n1 == 3) {
+?>
+		<div id="head2" class="clearfix">
+			<h1 style="">
+				<span>
+					<a href="<?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400_white.png" style="width:200px;"
+							alt="EIDAI"></a>
+				</span>
+				<span style="">One for all, All for one</span>
+			</h1>
+		</div>
+		<?php } else { ?>
+		<div id="head2" class="clearfix">
+			<h1 style="color:white;">
+				<span><a href="<?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400_white.png" style="width:200px;"
+							alt="EIDAI"></a></span>
+				<span>One for all, All for one</span>
+			</h1>
+		</div>
+		<?php } ?>
+
+
+
+
+	</div>
+	<!-- container end -->
+
+
+
+
+
+
+
+	<div class="wrapper-inner">
+		<div class="wrapper-inner2">
+			<div class="t-a-c">
+				<div class="font-b"
+					style="background: linear-gradient(transparent 85%, #ffaa0d 20%);display:inline-block">
+					先輩社員の声（T.YASUMA）</div>
+				<div class="font-m">Interview with T.YASUMA</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- wide box start -->
+	<div class="wrapper-inner clearfix2" style="background:white;padding:2em 0;">
+		<div class="t-a-c">
+			<img src="./img/t_yasuma_1.jpg" style="width:100%;max-width:1000px;">
+		</div>
+	</div>
+	<!-- wide box end -->
+
+
+	<!-- wide box start -->
+	<div class="wrapper-inner clearfix2" style="background:white;padding:2em 0;">
+
+		<div class="item2-r js-matchHeigtht">
+			<div style="background:white;" class="t-a-l">
+				<div class="pdg10em">
+					<img src="./img/t_yasuma_2.jpg" style="width:100%;">
+				</div>
+			</div>
+		</div>
+
+		<div class="item2-r js-matchHeigtht">
+			<div style="" class="t-a-l">
+				<div class="pdg10em">
+					<h2 class="n">Q：英代を選んだ理由は？</h2>
+					<p class="space-mgb">
+						皆さんはじめまして、英代技術部の安間 隆浩と申します。
+						入社を決めた理由ですが、最初英代にはアルバイトとして面接を受けにきたんですよね。
+						もともとPCを触ることは趣味…というか生活の一部となっていたので自然な流れではあったのと、
+						プログラミングには興味がありましたし、実際趣味で簡単なスクリプトを書いていたりはしたんですが、
+						「次の場所で正社員として就職するためのスキルをここで身につけたいな」ぐらいのモチベーションではありました。
+						ですが、河本社長が私の人生プランについて真剣に考え、話してくれたのが入社の決め手ですね。
+						私の人生でこんなに将来のビジョン、将来設計について熱く語られたことはなかったですし、
+						ましてや初対面でここまで親身になってくれる人はいなかったと思います。
+						それがなかったら、今でもいい加減な生活してたのかもなぁ、と思うと人生のターニングポイントだったのかなと思います。
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- wide box end -->
+
+
+
+	<!-- wide box start -->
+	<div class="wrapper-inner clearfix2" style="background:white;padding:2em 0;">
+
+		<div class="item2 js-matchHeigtht">
+			<div style="background:white;" class="t-a-l">
+				<div class="pdg10em">
+					<img src="./img/yasuma_1.jpg" style="width:100%;">
+				</div>
+			</div>
+		</div>
+
+		<div class="item2 js-matchHeigtht">
+			<div style="" class="t-a-l">
+				<div class="pdg10em">
+					<h2 class="n">Q：入社してからの印象を聞かせてください</h2>
+					<p class="space-mgb">
+						私は業務委託として他の現場に行っているので、会社の雰囲気を正確に伝えられるか…というとなんとも言えませんが、
+						月１回の定例会食会などで会社のメンバーと会うと、みんな仲良くやっているのでなかなかいいムードで働けているのではないかな？と思っています。
+						また、レクリエーションや行事も盛んな会社かと思います。
+						入社してひと月ぐらいのころ、河本社長に昔音楽をやっていたと伝えたところ、「他の会社の方とバンドやってるんだけど見学にきてみない？」
+						と誘われ、ついて行ってみたらいつのまにかバンドメンバーになっていました(笑)！
+						NBS（ニュービジネスサロン）主催でチャリティーライブをやるということで、土曜日や日曜日にメンバーで集まって練習をしていたのですが、
+						金曜日でお酒が入ってる&ほとんどブランク明けといった状態で
+						明日の準備のために深夜から翌朝までオリジナル曲のアレンジを考えたり個人練習をしていた頃が、一番大変な時期だったのでは…。
+						他にも社員旅行(人生初でした)や、パートナー企業の方々とともに競馬にいくなど(まだ勝ったことはないですが…)
+						さまざまな行事もあり、そういった繋がりで親交を深めることができますし、また人生にもメリハリがつくと思いますよ！
+						また、メンバー皆、温厚で優しい性格の人ばかりかと思います。
+						上記の内容で、いわゆる「リア充」やアウトドアタイプばっかりの会社なのかな？とおもうかもしれませんが、
+						私も含め、基本的にインドアタイプが多いですよ！ゲームが好きなメンバーも多いですね。
+						なので、そういった行事が苦手な人でもきっと馴染めると思いますし、無理に参加させるような人はいませんよ。
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<!-- wide box end -->
+
+
+	<!-- wide box start -->
+	<div class="wrapper-inner clearfix2" style="background:white;padding:2em 0;">
+
+		<div class="item2-r js-matchHeigtht">
+			<div style="background:white;" class="t-a-l">
+				<div class="pdg10em">
+					<img src="./img/yasuma_2.jpg" style="width:100%;">
+				</div>
+			</div>
+		</div>
+
+		<div class="item2-r js-matchHeigtht">
+			<div style="" class="t-a-l">
+				<div class="pdg10em">
+					<h2 class="n">Q：今、どんな業務をしていますか？</h2>
+					<p class="space-mgb">
+						私は現在の現場では、WEBサイトのテスター業務&他テスターメンバーの取りまとめ（プロジェクトリーダー）といった感じの作業をおこなっています。
+						とても大雑把に言えばですが、テスターの仕事は作っているモノに対して「いちゃもん」や「ダメ出し」をつけること。
+						それが仕事とはいえ、結局の所「人と人」とのやりとりですからね。「ダメ出し」をされて気分のいい人なんてあまりいないと思います。
+						そのため、そういった「ダメ出し」をわかりやすく、そして開発者に納得してもらえるように伝えるのがとても重要な仕事かと思います。
+						また、まだ実際にプログラムを組んだりといった業務はしていませんが、IT業界は「教え上手」な人が多いような気がしますね。
+						そういった方に質問すると、1が10になって返ってくるので、非常に勉強になります。
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- wide box end -->
+
+	<!-- wide box start -->
+	<div class="wrapper-inner clearfix2" style="background:white;padding:2em 0;">
+
+		<div class="item2 js-matchHeigtht">
+			<div style="background:white;" class="t-a-l">
+				<div class="pdg10em">
+					<img src="./img/yasuma_3.jpg" style="width:100%;">
+				</div>
+			</div>
+		</div>
+
+		<div class="item2 js-matchHeigtht">
+			<div style="" class="t-a-l">
+				<div class="pdg10em">
+					<h2 class="n">Q：入社を検討されている人たちへ一言</h2>
+					<p class="space-mgb">
+						英代は人柄重視の会社です。と言うと「どうせ言葉だけだろ？」と思う人も、もしかしたらいるかもしれませんが、
+						この会社は本当に人柄重視なんです（英代は7割以上がIT業界未経験で入社したメンバーです）。
+						別項でも述べましたが、優しい人ばかりの会社かとおもいます。
+						そのため自分のスキルに自信がなくても、「人の気持ち」を考えることができる人ならきっとうまく行くとおもいますよ！
+						また、完全にIT分野未経験の方でも「こういったことがやりたい」といった思いがあれば
+						自分にあった業務が必ずあると思いますし、その気持ちに応えられる会社かと思います。
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+	<!-- wide box end -->
+
+
+
+
+	<!-- page_wrap start -->
+	<div class="page_wrap">
+
+		<!-- page_wrap end -->
+	</div>
+
+
+
+	<?php
+	$para1 = "";
+	$para2 = "";
+	$para3 = "";
+	PrintRelationMenu($para1, $para2, $para3);
+?>
+
+
+
+	<?php
+	$para1 = "";
+	$para2 = "";
+	$para3 = "";
+	Printfooter($para1, $para2, $para3);
+?>
+
+
+
+
+
+
+	<!-- wrapper end -->
+</div>
+
+
+
+</body>
+
+</html>
+<?php
+	////////////////////////////////////////////////
+	//// PDO DB接続がNGの場合
+	////////////////////////////////////////////////
+	
+?>

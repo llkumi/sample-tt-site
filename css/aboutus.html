@@ -1,0 +1,300 @@
+<?php
+	$pagetype = 1;
+	include "../include/method.php";
+	include "../include/uniform.php";
+
+	////////////////////////////////////////////////
+	////////////////////////////////////////////////
+	//// PDOで接続
+	////////////////////////////////////////////////
+	////////////////////////////////////////////////
+
+	/// DBに接続できない場合に備えて、例外処理の「try」を使って接続を行う
+
+	try {
+  	$dbh = new PDO(D_DSN, D_DB_USERNAME, D_DB_PASSWORD);
+
+
+
+  	$title = "会社情報";
+  	$para1 = "ceo";
+  	$para2 = "";
+  	$para3 = "";
+  	$para4 = "";
+  	$para5 = "";
+  	PrintHeader($title, $para1, $para2, $para3, $para4, $para5);
+
+	$n1 = mt_rand(1, 5);
+	$n1 = 5;
+	$n2 = mt_rand(1, 5);
+
+?>
+<!-- wrapper start -->
+<div id="wrapper-patern<?php print h($n1); ?>">
+
+
+	<!-- container start -->
+	<div class="container-slide demo-2">
+
+
+		<?php
+	if ($n1 == 3) {
+?>
+		<div id="head2" class="clearfix">
+			<h1 style="">
+				<span>
+					<a href="<?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400.png" style="width:200px;"
+							alt="EIDAI"></a>
+				</span>
+				<span style="">One for all, all for one</span>
+			</h1>
+		</div>
+		<?php } else { ?>
+		<div id="head2" class="clearfix">
+			<h1 style="color:#fff;">
+				<span><a href="<?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400_white.png" style="width:200px;"
+							alt="EIDAI"></a></span>
+				<span>One for all, all for one</span>
+			</h1>
+		</div>
+		<?php } ?>
+
+
+
+
+	</div>
+	<!-- container end -->
+	<!-- ここが真のスタート位置-->
+
+	<!-- wide box start -->
+	<div class="box1">
+		<img class="vab" src="images/key_16.jpg" alt="代表メッセージ" 　>
+
+	</div>
+
+	<div class="wrapper-inner">
+		<div class="wrapper-inner2">
+			<div class="t-a-c">
+				<div class="font-b"
+					style="background: linear-gradient(transparent 85%, #ffaa0d 20%);display:inline-block">会社情報</div>
+				<div class="font-m">Company profile</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper-inner clearfix2" style="background:white;padding:2em 0;">
+
+		<div class="item" style="margin: 0 1% 0 1%;">
+			<div class="qa ress">
+				<div class="pdg10em">
+					<h2 id="ceo_msg" class="tit">代表挨拶</h2>
+					<div class="clearfix2">
+
+
+						<img class="vab" src="img/kawamoto5.jpg" style="margin-bottom:3em;">
+
+
+						<h1 class="font-bm t-a-c space-mgb2　bbr">
+							共生の社会の実現を推進する
+							<!-- <span class="head_test-point"></span> -->
+						</h1>
+
+						<p class="space-mgb">
+							<span>英</span>代という会社は、共生の社会実現を目指している会社です。私達が考える「共生の社会」とは共に喜び、共に発展し、共に痛みをわける社会です。相手の立場で見たり感じたりすることができる人で満ちている社会です。
+						</p>
+						<p class="space-mgb">
+							そして、共生の社会とは戦う社会でもあります。相手を蹴落とす戦いではなく、相手と手を取り合うために戦う。こういう社会を私達は目指しています。簡単ではないからこそ、私達は自ら、人としてのステージを上げていきます。人間性、専門性、こころざしを高め、経験を積み、人・企業・社会の成長や発展に個々の知見や能力を活かし貢献していきます。
+						</p>
+
+						<p class="space-mgb">
+							私達の会社には、学歴だけでは計れない個性や才能の持ち主がたくさんいます。日本を代表するような能力の持ち主もいます。ですが、その個性や才能をひけらかす人はひとりもいません。自分だけで導いたものでないと痛いほどわかっているからです。
+						</p>
+
+						<p class="space-mgb">
+							個性や才能は、一人で育てることはできません。どれだけ優秀な、秀でた能力を身に付けている人でも家庭での教育、学生時代の優秀な指導者・刺激的な友人・ライバルとの出会いなど、自分以外の要素によってその能力は見出され、磨かれてきています。
+						</p>
+						<p class="space-mgb">
+							当然、潜在的な能力や自分自身の努力の積み上げも大事な要素ですが、ただそれだけでは大きな成果を得ることはできません。両親から受け継いだ能力も、大切な人たちとの出会いも、その人を成長させる神がかった出来事も、これらすべてを含めて、その人の「GIFT（天から与えられた能力）」だと考えています。GIFTとは自分だけでは生み出せない偉大な力ですから、ここには大きな意味が込められています。優秀な、秀でた人であればあるほど、自分自身のためだけではなく、自分を含めた周囲の人や社会にその力を使って欲しいと思います。働いていく中で磨き、高めていく要素を自分以外に役立たせることができる人に成長していって欲しい。そういう人たちに来て欲しい、こういう人と新しい社会を一緒にイメージし、一緒につくっていきたいと願っています。
+						</p>
+
+
+						<p class="space-mgb" style="margin-bottom:3em;">自らの持ち味を磨き、One for all, all for one
+							の精神で（みんなが一人のため、一人がみんなのために）考え行動する会社、100年先の未来の人たちの心に響く生き方、働き方ができる会社を、素敵な仲間たちと共に築いていきたいと思います。
+						</p>
+
+						<p class="nnname" style="margin-bottom:1em; text-align:right;">英代株式会社</p>
+						<p class="nnname" style="margin-bottom:1em; text-align:right;">代表取締役</p>
+						<img src="./images/kawamoto_ff.png" class="kawamoto">
+
+
+
+
+
+
+
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- wide box end -->
+
+
+
+
+
+
+		<!-- page_wrap start -->
+		<div class="item">
+			<div class="qa ress">
+				<div class="pdg10em">
+					<h2 id="Company overview" class="tit">会社概要</h2>
+					<!--<img class="box6" src="img/uploads/20190403164219_photo_Kawamoto01.jpg" alt="河本熊あ('ω')"　width=520 height=510>-->
+
+
+					<table class="table01">
+						<tr>
+							<th>会社名</th>
+							<td>英代株式会社</td>
+						</tr>
+						<tr>
+							<th>創業</th>
+							<td>1999年6月</td>
+						</tr>
+						<tr>
+							<th>設立</th>
+							<td>2004年2月</td>
+						</tr>
+						<tr>
+							<th>代表者</th>
+							<td>河本英樹</td>
+						</tr>
+						<tr>
+							<th>資本金</th>
+							<td>1,200万円</td>
+						</tr>
+						<tr>
+							<th>役員</th>
+							<td>代表取締役　河本英樹<br>取締役 島　至（株式会社エスピック 代表取締役会長）</td>
+						</tr>
+						<tr>
+							<th>取引銀行</th>
+							<td>三菱UFJ銀行　京橋中央支店</td>
+						</tr>
+						<tr>
+							<th>加盟団体</th>
+							<td>東京中小企業家<br>NBS（ニュービジネスサロン）</td>
+						</tr>
+						<tr>
+							<th>所在地</th>
+							<td>東京都墨田区両国2-10-14両国シティコア9F(株式会社エスピック内)</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="qa ress">
+				<div class="pdg10em">
+					<h2 id="access" class="tit">ACCESS</h2>
+					<div class="clearfix2">
+
+
+						<div class="item2">
+							<div class="gmap">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.3155177654658!2d139.79052061522316!3d35.693852536887306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018894a65275cbd%3A0xbe7c4dae0ef7f33!2z5Lih5Zu944K344OG44Kj44Kz44Ki!5e0!3m2!1sja!2sjp!4v1557216745754!5m2!1sja!2sjp"
+									width="100%" height="auto" frameborder="0" style="border:0"
+									allowfullscreen></iframe>
+								<div id="map"></div>
+								<script>
+									function initMap() {
+										// Styles a map in night mode.
+										var map = new google.maps.Map(document.getElementById('map'), {
+											center: { lat: 35.336292, lng: 139.444951 },
+											zoom: 12,
+											styles:
+//↑ここまで↑
+);
+									}
+								</script>
+								<style>
+									/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+									#map {
+										height: 100%;
+									}
+
+									/* Optional: Makes the sample page fill the window. */
+									html,
+									body {
+										height: 100%;
+										margin: 0;
+										padding: 0;
+									}
+								</style>
+							</div>
+
+
+						</div>
+
+						<div class="item2 ac sousyoku">
+							<p class="space-mgb5 aaa font-b">英代株式会社<span class="ruby">（EIDAI, Inc.）</span></p>
+							<p>〒130-0026</p>
+							<p>東京都墨田区両国2-10-14 両国シティコア 9F （株式会社エスピック内）</p>
+							<p class="space-mgb5">TEL：03-5669-0215 / FAX：03-5669-0216</p>
+
+							<div class="ac">
+								<p>JR総武線「両国駅」より徒歩3分</p>
+								<p>都営大江戸線「両国駅」より徒歩10分</p>
+							</div>
+						</div>
+
+
+
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<!-- page_wrap end -->
+
+
+	<?php
+	$para1 = "";
+	$para2 = "";
+	$para3 = "";
+	Printfooter($para1, $para2, $para3);
+?>
+
+	<!-- wrapper end -->
+</div>
+
+</body>
+
+</html>
+<?php
+	////////////////////////////////////////////////
+	//// PDO DB接続がNGの場合
+	////////////////////////////////////////////////
+	} catch (PDOException $e) {
+		/// exit("データベースに接続できませんでした。". $e->getMessage());
+		location (D_SSL."db_error.html?code=1");
+		exit;
+	}
+?>

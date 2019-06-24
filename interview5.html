@@ -1,0 +1,244 @@
+<?php
+	$pagetype = 1;
+	$slidertype = 3;
+	$relationtype = 2;
+	include "../include/method.php";
+	include "../include/uniform.php";
+	
+	////////////////////////////////////////////////
+	////////////////////////////////////////////////
+	//// PDOで接続
+	////////////////////////////////////////////////
+	////////////////////////////////////////////////
+	
+	/// DBに接続できない場合に備えて、例外処理の「try」を使って接続を行う
+	
+	
+  
+  
+  	
+  	$title = "Interview with Y.Yamaji";
+  	$para1 = "";
+  	$para2 = "";
+  	$para3 = "";
+  	$para4 = "";
+  	$para5 = "";
+  	PrintHeader($title, $para1, $para2, $para3, $para4, $para5);
+
+	$n1 = mt_rand(1, 5);
+	$n1 = 5;
+	$n2 = mt_rand(1, 5);
+?>
+<!-- wrapper start -->
+<div id= "wrapper-patern<?php print h($n1); ?>">
+
+
+<!-- container start -->
+<div class="container-slide demo-2">
+		
+
+<?php
+	if ($n1 == 3) {
+?>
+<div id="head2" class="clearfix">
+<h1 style="color:white">
+<span>
+<a href="<?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400_white.png" style="width:200px;" alt="EIDAI"></a>
+</span>
+<span style="">One for all, All for one</span>
+</h1>
+</div>
+<?php } else { ?>
+<div id="head2" class="clearfix">
+<h1 style="color:white;">
+<span><a href="<?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400_white.png" style="width:200px;" alt="EIDAI"></a></span>
+<span>One for all, All for one</span>
+</h1>
+</div>
+<?php } ?>
+
+		
+		
+
+</div>
+<!-- container end -->
+
+
+
+
+
+
+
+<div class="wrapper-inner">
+<div class="wrapper-inner2">
+<div class="t-a-c">
+<div class="font-b"style="background: linear-gradient(transparent 85%, #ffaa0d 20%);display:inline-block">先輩社員の声（Y.YAMAJI）</div>
+<div class="font-m">Interview with Y.YAMAJI</div>
+</div>
+</div>
+</div>
+
+<!-- wide box start -->
+<div class="wrapper-inner clearfix2" style="background:#ededed;padding:2em 0;">
+<div class="t-a-c">
+<img src="./img/yamaji_1.jpg" style="width:100%;max-width:1000px;">
+</div>
+</div>
+<!-- wide box end -->
+
+
+<!-- wide box start -->
+<div class="wrapper-inner clearfix2" style="background:#ededed;padding:2em 0;">
+
+<div class="item2 js-matchHeigtht">
+<div style="background:#ededed;" class="t-a-l font-s">
+<div class="pdg10em">
+<img src="./img/yamaji_2.jpg" style="width:100%;">
+</div>
+</div>
+</div>
+
+<div class="item2 js-matchHeigtht">
+<div style="" class="t-a-l">
+<div class="pdg10em">
+<h2 class="n">Q：英代を選んだ理由は？</h2>
+<p class="space-mgb">
+以前は官公庁で5年以上エクセルを使った事務をしていましたが、プログラミングに興味を持ち、IT企業へ転職を決意しました。
+しかし、違う職種に転職することは難しく、実務経験なしの人を雇う会社は皆無でした。
+そんな中、英代に出会いIT企業で経験を積むチャンスを得ることができました。
+未経験でもIT知識を学ぶ環境があり、配属先で経験を積むことができる、そして今後に向けてキャリア形成もできると思い、入社を決めました。
+</p>
+</div>
+</div>
+</div>
+
+</div>
+<!-- wide box end -->
+
+
+
+<!-- wide box start -->
+<div class="wrapper-inner clearfix2" style="background:#ededed;padding:2em 0;">
+
+<div class="item2 js-matchHeigtht">
+<div style="" class="t-a-l">
+<div class="pdg10em">
+<h2 class="n">Q：入社してからの印象を聞かせてください</h2>
+<p class="space-mgb">
+今まで官公庁で勤務経験が多く民間（IT）企業の雰囲気がわからず、馴染むことができるか不安に思っていましたが、アットホームな雰囲気でしたので業務（IT知識の学習）に落ち着いて取り組むことができました。
+優しい方が多く、親切丁寧に教えてもらいながらITの知識の学習ができる環境なので、安心して学ぶことができています。
+</p>
+</div>
+</div>
+</div>
+
+<div class="item2 js-matchHeigtht">
+<div style="background:#ededed;" class="t-a-l font-s">
+<div class="pdg10em">
+<img src="./img/yamaji_4.jpg" style="width:100%;">
+</div>
+</div>
+</div>
+
+</div>
+<!-- wide box end -->
+
+
+<!-- wide box start -->
+<div class="wrapper-inner clearfix2" style="background:#ededed;padding:2em 0;">
+
+<div class="item2 js-matchHeigtht">
+<div style="background:#ededed;" class="t-a-l font-s">
+<div class="pdg10em">
+<img src="./img/yamaji_3.jpg" style="width:100%;">
+</div>
+</div>
+</div>
+
+<div class="item2 js-matchHeigtht">
+<div style="" class="t-a-l">
+<div class="pdg10em">
+<h2 class="n">Q：今、どんな業務をしていますか？</h2>
+<p class="space-mgb">
+業務で必要なSQLとBIツールの学習とITパスポートの学習をしています。
+SQLとBIツールは初めて学習するので、それぞれ構造や専門用語など基本から学んでいます。
+IT企業で仕事をするために必要な資格、ITパスポートや基本情報技術者の取得は必須であると思いますのでまずは基本の資格の合格を目指しています。
+今後は応用情報技術者の取得も目指します。
+</p>
+</div>
+</div>
+</div>
+
+</div>
+<!-- wide box end -->
+
+<!-- wide box start -->
+<div class="wrapper-inner clearfix2" style="background:#ededed;padding:2em 0;">
+
+<div class="item2 js-matchHeigtht">
+<div style="" class="t-a-l">
+<div class="pdg10em">
+<h2 class="n">Q：入社を検討されている人たちへ一言</h2>
+<p class="space-mgb">
+私は現在、日々新しい知識を学ぶことができ充実した時間を過ごすことができています。
+未経験でIT知識がなく、異業種からの転職は難しいと思い込んでいましたが、意欲があればチャンスは必ず訪れると思います。「エンジニアになりたい」「プログラミングが好き」「IT企業で活躍したい」「プログラミングスクールなどで得た知識を活かしたい」方は英代で挑戦してみるのも良いと思います。
+</p>
+</div>
+</div>
+</div>
+
+<div class="item2 js-matchHeigtht">
+<div style="background:#ededed;" class="t-a-l font-s">
+<div class="pdg10em">
+
+</div>
+</div>
+</div>
+
+</div>
+<!-- wide box end -->
+
+
+
+<!-- page_wrap start -->
+<div class="page_wrap">
+
+<!-- page_wrap end -->
+</div>
+
+
+
+
+<?php
+	$para1 = "";
+	$para2 = "";
+	$para3 = "";
+	PrintRelationMenu($para1, $para2, $para3);
+?>
+
+
+<?php
+	$para1 = "";
+	$para2 = "";
+	$para3 = "";
+	Printfooter($para1, $para2, $para3);
+?>
+
+
+
+
+
+
+<!-- wrapper end -->
+</div>
+
+
+
+</body>
+</html>
+<?php
+	////////////////////////////////////////////////
+	//// PDO DB接続がNGの場合
+	////////////////////////////////////////////////
+	
+?>

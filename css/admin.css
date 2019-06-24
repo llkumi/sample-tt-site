@@ -1,0 +1,107 @@
+/***************************************************/
+/****  Common　 ****/
+/***************************************************/
+/***************************************************/
+/***************************************************/
+/***************************************************/
+
+* {
+    /** Google font**/
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+.bg-palegray {
+background:#ededed;
+}
+
+/** Table patern **/
+table.tbl-patern2{
+width:100%;
+border: 2px solid #cccccc;
+border-collapse: collapse;
+word-break: break-all;
+word-wrap: break-word;
+position: static;
+}
+ 
+table.tbl-patern2 th{
+padding: 1em;
+width: 30%;
+text-align: left;
+word-break: break-all;
+word-wrap: break-word;
+vertical-align: middle;
+background-color: #ededed;
+border-bottom:1px solid #ffffff;
+position: static;
+color:#666666;
+}
+ 
+table.tbl-patern2 td{
+padding: 1em;
+text-align: left;
+vertical-align: middle;
+background-color: none;
+word-break: break-all;
+word-wrap: break-word;
+border-right:1px solid #cccccc;
+border-bottom:1px solid #cccccc;
+position: static;
+}
+
+span.column,
+div.column,
+td.column {
+display:none;
+}
+ 
+@media (max-width: 619px){
+
+span.column,
+div.column,
+td.column {
+display:inline-block;
+}
+
+table.tbl-patern2{
+border: 2px solid #cccccc;
+border-collapse: collapse;
+border-collapse: collapse;
+word-break: break-all;
+word-wrap: break-word;
+table-layout: fixed;
+/*border:none;*/
+position: static;
+padding:0;
+}
+
+table.tbl-patern2 tr,
+table.tbl-patern2 th,
+table.tbl-patern2 td {
+width:auto;
+display:block;
+margin: -8px;
+border:none;
+padding:1em;
+word-break: break-all;
+word-wrap: break-word;
+position: static;
+}
+table.tbl-patern2 th {
+background-color: none;
+border-bottom:1px solid #ededed;
+}
+table.tbl-patern2 td {
+background-color: none;
+border-bottom:1px solid #ededed;
+}
+table.tbl-patern2 td:last-child {
+background-color: none;
+border-bottom:none;
+}
+table.tbl-patern2 tr.first {
+display:none;
+}
+}/* end */

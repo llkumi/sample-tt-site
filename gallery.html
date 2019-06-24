@@ -1,0 +1,238 @@
+<?php
+	$pagetype = 1;
+	$slidertype = 3;
+	$relationtype = 2;
+	include "../include/method.php";
+	include "../include/uniform.php";
+	
+	////////////////////////////////////////////////
+	////////////////////////////////////////////////
+	//// PDOで接続
+	////////////////////////////////////////////////
+	////////////////////////////////////////////////
+	
+	/// DBに接続できない場合に備えて、例外処理の「try」を使って接続を行う
+	
+	
+  
+  	
+  	$title = "英代フォトギャラリー";
+  	$para1 = "";
+  	$para2 = "";
+  	$para3 = "";
+  	$para4 = "";
+  	$para5 = "";
+  	PrintHeader($title, $para1, $para2, $para3, $para4, $para5);
+
+	$n1 = mt_rand(1, 5);
+	$n1 = 5;
+	$n2 = mt_rand(1, 5);
+?>
+<!-- wrapper start -->
+<div id= "wrapper-patern<?php print h($n1); ?>">
+
+
+<!-- container start -->
+<div class="container-slide demo-2">
+		
+
+<?php
+	if ($n1 == 3) {
+?>
+<div id="head2" class="clearfix">
+<h1 style="">
+<span>
+<a href="<?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400_white.png" style="width:200px;" alt="EIDAI"></a>
+</span>
+<span style="">One for all, All for one</span>
+</h1>
+</div>
+<?php } else { ?>
+<div id="head2" class="clearfix">
+<h1 style="color:white;">
+<span><a href="<?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400_white.png" style="width:200px;" alt="EIDAI"></a></span>
+<span>One for all, All for one</span>
+</h1>
+</div>
+<?php } ?>
+
+		
+		
+
+</div>
+<!-- container end -->
+
+
+
+
+
+<div><img src="./images/key_05.jpg" style="width:100%;vertical-align:bottom;"></div>
+
+
+
+
+
+
+
+<div class="wrapper-inner">
+<div class="wrapper-inner2">
+<div class="t-a-c">
+<div class="font-b"style="background: linear-gradient(transparent 85%, #ffaa0d 20%);display:inline-block">英代フォトギャラリー</div>
+<div class="font-m">EIDAI Photo Gallery</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- wide box start -->
+
+<div class="wrapper-inner clearfix2" style="margin:0;padding:2em 0;">
+
+<div class="item4 js-matchHeigtht">
+<div class="photo-wrap">
+<div class="photo-inner"><div class="font-s photo-inner2">自撮りしてみた！</div></div>
+<div class="pdg10em"><img src="./img/hatori_1.jpg" style="width:100%;vertical-align:bottom;"></div>
+</div>
+</div>
+
+
+<div class="item4 js-matchHeigtht">
+<div class="photo-wrap">
+<div class="photo-inner"><div class="font-s photo-inner2">両国勤務組でお花見ランチ！</div></div>
+<div class="tgle"></div>
+<div class="pdg10em"><img src="./img/ryogoku1.jpg" style="width:100%;vertical-align:bottom;"></div>
+</div>
+</div>
+
+<div class="item4 js-matchHeigtht">
+<div class="photo-wrap">
+<div class="photo-inner"><div class="font-s photo-inner2">NBSチャリティー音楽祭に参加！</div></div>
+<div class="tgle"></div>
+<div class="pdg10em"><img src="./img/gallery_001.jpg" style="width:100%;vertical-align:bottom;"></div>
+</div>
+</div>
+
+<div class="item4 js-matchHeigtht">
+<div class="photo-wrap">
+<div class="photo-inner"><div class="font-s photo-inner2">両国と言えば！</div></div>
+<div class="tgle"></div>
+<div class="pdg10em"><img src="./img/gallery_002.jpg" style="width:100%;vertical-align:bottom;"></div>
+</div>
+</div>
+
+
+<div class="item4 js-matchHeigtht">
+<div class="photo-wrap">
+<div class="photo-inner"><div class="font-s photo-inner2">熱海に到着！</div></div>
+<div class="pdg10em"><img src="./img/atami06.jpg" style="width:100%;vertical-align:bottom;"></div>
+</div>
+</div>
+
+
+<div class="item4 js-matchHeigtht">
+<div class="photo-wrap">
+<div class="photo-inner"><div class="font-s photo-inner2">社員旅行はゲーム機持参で朝までゲーム大会！</div></div>
+<div class="pdg10em"><img src="./img/atami04.jpg" style="width:100%;vertical-align:bottom;"></div>
+</div>
+</div>
+
+
+<div class="item4 js-matchHeigtht">
+<div class="photo-wrap">
+<div class="photo-inner"><div class="font-s photo-inner2">月1回の定例会食会。ちょっと豪華に会食会です！</div></div>
+<div class="pdg10em"><img src="./img/ryogoku2.jpg" style="width:100%;vertical-align:bottom;"></div>
+</div>
+</div>
+
+
+<div class="item4 js-matchHeigtht">
+<div class="photo-wrap">
+<div class="photo-inner"><div class="font-s photo-inner2">社外の仲間たちとチャリティーライブ！</div></div>
+<div class="pdg10em"><img src="./img/ryogoku3.jpg" style="width:100%;vertical-align:bottom;"></div>
+</div>
+</div>
+
+
+<div class="item4 js-matchHeigtht">
+<div class="photo-wrap">
+<div class="photo-inner"><div class="font-s photo-inner2">NBSチャリティーライブ出演者で集合写真！</div></div>
+<div class="pdg10em"><img src="./img/ryogoku4.jpg" style="width:100%;vertical-align:bottom;"></div>
+</div>
+</div>
+
+
+<div class="item4 js-matchHeigtht">
+<div class="photo-wrap">
+<div class="photo-inner"><div class="font-s photo-inner2">2月の定例会食会は「バルバッコア」！</div></div>
+<div class="pdg10em"><img src="./img/ryogoku5.jpg" style="width:100%;vertical-align:bottom;"></div>
+</div>
+</div>
+
+
+<div class="item4 js-matchHeigtht">
+<div class="photo-wrap">
+<div class="photo-inner"><div class="font-s photo-inner2">仕事、遊び、そしてときどき勉強！</div></div>
+<div class="pdg10em"><img src="./img/ryogoku6.jpg" style="width:100%;vertical-align:bottom;"></div>
+</div>
+</div>
+
+
+<div class="item4 js-matchHeigtht">
+<div class="photo-wrap">
+<div class="photo-inner"><div class="font-s photo-inner2">BP、お客様と一緒に忘年会食会！</div></div>
+<div class="pdg10em"><img src="./img/ryogoku7.jpg" style="width:100%;vertical-align:bottom;"></div>
+</div>
+</div>
+
+
+
+</div>
+
+<!-- wide box end -->
+
+
+
+
+
+
+<?php
+	$para1 = "";
+	$para2 = "";
+	$para3 = "";
+	PrintRelationMenu($para1, $para2, $para3);
+?>
+
+
+<?php
+	$para1 = "";
+	$para2 = "";
+	$para3 = "";
+	Printfooter($para1, $para2, $para3);
+?>
+
+
+
+
+
+
+<!-- wrapper end -->
+</div>
+
+
+
+</body>
+</html>
+<?php
+	////////////////////////////////////////////////
+	//// PDO DB接続がNGの場合
+	////////////////////////////////////////////////
+	
+?>
