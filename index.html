@@ -1,275 +1,231 @@
-<?php
-	$pagetype = 1;
-	$slidertype = 1;
-	include "../include/method.php";
-	include "../include/uniform.php";
-	
-	////////////////////////////////////////////////
-	////////////////////////////////////////////////
-	//// PDOで接続
-	////////////////////////////////////////////////
-	////////////////////////////////////////////////
-	
-	/// DBに接続できない場合に備えて、例外処理の「try」を使って接続を行う
-	
-	
-  	
-  	$title = "HOME";
-  	$para1 = "";
-  	$para2 = "";
-  	$para3 = "";
-  	$para4 = "";
-  	$para5 = 1; /// WebGLのグラフィックを使うかどうか　使用する場合はINT型で「1」
-  	PrintHeader($title, $para1, $para2, $para3, $para4, $para5);
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> 
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script> 
+<script src="js/jquery.slicknav.js"></script> 
 
-	$n1 = mt_rand(1, 5);
-	$n1 = 6; ///背景色なしのラッパータイプ番号（WebGLを出すタイプ）
-	$n2 = mt_rand(1, 5);
-?>
-<!-- wrapper start -->
-<div id="wrapper-patern<?php print h($n1); ?>">
+<link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="css/slick.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
 
-
-	<!-- container start -->
-
-
-
-	<?php
-	//// IEは例外処理が多いのでIEかどうかの情報をあらかじめ取得しておく
-	$ua = $_SERVER["HTTP_USER_AGENT"];
-	if ($ua) {
-	$ua = strtolower($ua);
-		if (strstr($ua, "trident") || strstr($ua, "msie")) {
-		$bos = "IE";
-		} else {
-		$bos = "IE以外";
-		}
-	} else {
-	$bos = "UNKNOWN";
-	}
-
-	if ($bos == "IE") {
-	$n1 = 3;
-	} else {
-	$n1 = 1;
-	}
-	if ($n1 == 3) {
-?>
-	<div class="container-slide demo-2" style="">
-		<div id="head" class="clearfix">
-			<h1 style="color:white;">
-				<span>
-					<a href=" <?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400_white.png" style="width:200px;"
-							alt="EIDAI"></a>
-				</span>
-				<span style="">大宮卓球</span>
-			</h1>
-		</div>
-		<?php } else { ?>
-		<div class="container-slide demo-2" style="background:none;">
-			<div id="head" class="clearfix">
-				<h1 style="color:white;">
-					<span><a href="<?php print h(D_SSL); ?>"><img src="./img/eidai_logo_400_white.png"
-								style="width:200px;" alt="EIDAI"></a></span>
-					<span>大宮卓球</span>
-				</h1>
-			</div>
-			<?php } ?>
-
-
-
-
-			<div style="background-color:white;">
-				<div id="slider" class="sl-slider-wrapper">
-
-					<div class="sl-slider">
-
-
-						<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25"
-							data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-							<div class="sl-slide-inner">
-								<div id="sl01" class="sl01">
-									<div class="bg-img bg-img-1"></div>
-									<div class="tit-for-bnr2 t-a-c">
-										<h2>お知らせ</h2>
-										<blockquote>
-											<p>商品のお知らせなど</p>
-										</blockquote>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10"
-							data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-							<div class="sl-slide-inner">
-								<div id="sl02" class="sl02">
-									<div class="bg-img bg-img-2"></div>
-									<h2>お店紹介</h2>
-									<blockquote>
-										<p></p>
-										<p>お店の写真など</p>
-									</blockquote>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3"
-							data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-							<div class="sl-slide-inner">
-								<div id="sl03" class="sl03">
-									<div class="bg-img bg-img-3"></div>
-									<h2>スタッフ紹介</h2>
-									<blockquote>
-										<p>写真など</p>
-									</blockquote>
-								</div>
-							</div>
-						</div>
-
-
-						<!-- <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5"
-							data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
-							<div class="sl-slide-inner">
-								<div id="sl04" class="sl04">
-									<div class="bg-img bg-img-4"></div>
-									<h2>素敵なスペシャリスト</h2>
-									<blockquote>
-										<p>社員一人ひとりには「自分も、周囲の人も幸せにする！」という想いを大切にした「素敵なIT技術者」、「素敵なスペシャリスト」になってもらいたいと思います。
-										</p>
-									</blockquote>
-								</div>
-							</div>
-						</div> -->
-
-
-						<!-- <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5"
-							data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
-							<div class="sl-slide-inner">
-								<div id="sl05" class="sl05">
-									<div class="bg-img bg-img-5"></div>
-									<h2>清々しい達成感を</h2>
-									<blockquote>
-										<p>「失敗」は一人でもできますが、「成功」は一人ではできません。素敵な仲間たちと支え合い、清々しい達成感を味わい、いい会社、いい社会をつくっていきましょう！
-										</p>
-									</blockquote>
-								</div>
-							</div>
-						</div> -->
-
-
-
-					</div><!-- /sl-slider -->
-
-					<!--<nav id="nav-dots" class="nav-dots">
-						<span class="nav-dot-current"></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</nav>
-				-->
-				</div><!-- /slider-wrapper -->
-
-
-			</div>
-			<!-- container end -->
-
-
-
-			<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
-			<script type="text/javascript" src="js/jquery.slitslider.js"></script>
-			<script type="text/javascript">
-				$(function () {
-					var Page = (function () {
-						var $nav = $('#nav-dots > span'),
-							slitslider = $('#slider').slitslider({
-								onBeforeChange: function (slide, pos) {
-									$nav.removeClass('nav-dot-current');
-									$nav.eq(pos).addClass('nav-dot-current');
-								}
-							}),
-							init = function () {
-								initEvents();
-							},
-							initEvents = function () {
-								$nav.each(function (i) {
-									$(this).on('click', function (event) {
-										var $dot = $(this);
-										if (!slitslider.isActive()) {
-											$nav.removeClass('nav-dot-current');
-											$dot.addClass('nav-dot-current');
-										}
-										slitslider.jump(i + 1);
-										return false;
-									});
-								});
-							};
-						return { init: init };
-					})();
-					Page.init();
-				});
-			</script>
+<link rel="stylesheet" href="cal.css" type="text/css">
 
 
 
 
 
+<title>大宮卓球</title>
+</head>
+<body style="margin:0;">
 
-
-			<div style="background-color:white;">
-				<?php
-	$para1 = "";
-	$para2 = "";
-	$para3 = "";
-	PrintSlider($para1, $para2, $para3);
-?>
-			</div>
-
-		</div>
-
-
-
-
-
-
-		<?php
-	$para1 = "";
-	$para2 = "";
-	$para3 = "";
-	PrintFooter($para1, $para2, $para3);
-?>
+<div class="nav">
+        <ul>
+          <li><a href="#">LOGO</a></li>
+          <li><a href="#">List1</a></li>
+          <li><a href="#">List2</a></li>
+          <li><a href="#">List3</a></li>
+          <li><a href="#">List4</a></li>
+          <li><a href="#">List5</a></li>
+        </ul>
+</div>
 
 
 
+        <ul class="single">
+          <li><a href="#"><img src="images/1.jpg"></a></li>
+          <li><a href="#"><img src="images/2.jpg"></a></li>
+          <li><a href="#"><img src="images/3.jpg"></a></li>
+        </ul>
+
+
+<div class="container3">
+        <div class="item3"><img src="img/home-icon.png" alt="home" width=80%;><p>ホーム</p></div>
+        <div class="item3"><img src="img/news-icon.png" alt="news" width=80%;><p>ニュース</p></div>
+        <div class="item3"><img src="img/staff-icon.png" alt="home" width=80%;><p>staff紹介</p></div>
+        <div class="item3"><img src="img/shop-icon.png" alt="shop" width=80%;><p>お店紹介</p></div>
+        <div class="item3"><img src="img/photo-icon.png" alt="photo" width=80%;><p>ギャラリー</p></div>
+        <div class="item3"><img src="img/mail-icon.png" alt="hmail" width=80%;><p>お問合わせ</p></div>
+</div>
 
 
 
-		<!-- wrapper end -->
-	</div>
+<div style="background-color: rgb(255,145,145)">
+<main role="main" class="main-wrapper">
 
-	<script>
-		$('.carousel').flickity({
-			// ここでオプションを設定します。
+        <h>お店からのお知らせ</h>
+        <section class="card-wrapper">
+          <div class="card-header">
+            <span class="card-info">Sergiu C.</span>
+            <div class="card-header_valign">
+              <h1 class="card-header_pers">Sergiu Cebotaru</h1>
+              <h2 class="card-header_func">front-end dev</h2>
+            </div>
+          </div>
+        
+      
+            <div class="card-photo"></div>
+      
+            <div class="card-holder">
+              <div class="card-holder_ovh">
+                <p class="card-holder_info">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim accusantium doloribus.
+                </p>
+              </div>
+            </div>
+          
+          <div class="card-footer">
+            <ul>
+              <li><a class="card-footer_link" href="#"><span class="icon icon-fb"></span></a></li>
+              <li><a class="card-footer_link" href="#"><span class="icon icon-tw"></span></a></li>
+              <li><a class="card-footer_link" href="#"><span class="icon icon-insta1"></span></a></li>
+              <li><a class="card-footer_link" href="#"><span class="icon icon-lin1"></span></a></li>
+            </ul>
+          </div>
+        </section>
 
-			wrapAround: true,
-			//　trueで無限スクロール。デフォルトはfalse。
-			autoPlay: true
-			// trueで3秒間隔で自動スクロール。秒数を指定したい場合は1500などミリ秒で指定する。デフォルトはfalse。
-		});
-	</script>
+        <section class="card-wrapper">
+                <div class="card-header">
+                  <span class="card-info">Sergiu C.</span>
+                  <div class="card-header_valign">
+                    <h1 class="card-header_pers">Sergiu Cebotaru</h1>
+                    <h2 class="card-header_func">front-end dev</h2>
+                  </div>
+                </div>
+              
+            
+                  <div class="card-photo"></div>
+            
+                  <div class="card-holder">
+                    <div class="card-holder_ovh">
+                      <p class="card-holder_info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim accusantium doloribus.
+                      </p>
+                    </div>
+                  </div>
+                
+                <div class="card-footer">
+                  <ul>
+                    <li><a class="card-footer_link" href="#"><span class="icon icon-fb"></span></a></li>
+                    <li><a class="card-footer_link" href="#"><span class="icon icon-tw"></span></a></li>
+                    <li><a class="card-footer_link" href="#"><span class="icon icon-insta1"></span></a></li>
+                    <li><a class="card-footer_link" href="#"><span class="icon icon-lin1"></span></a></li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="card-wrapper">
+                    <div class="card-header">
+                      <span class="card-info">Sergiu C.</span>
+                      <div class="card-header_valign">
+                        <h1 class="card-header_pers">Sergiu Cebotaru</h1>
+                        <h2 class="card-header_func">front-end dev</h2>
+                      </div>
+                    </div>
+                  
+                
+                      <div class="card-photo"></div>
+                
+                      <div class="card-holder">
+                        <div class="card-holder_ovh">
+                          <p class="card-holder_info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim accusantium doloribus.
+                          </p>
+                        </div>
+                      </div>
+                    
+                    <div class="card-footer">
+                      <ul>
+                        <li><a class="card-footer_link" href="#"><span class="icon icon-fb"></span></a></li>
+                        <li><a class="card-footer_link" href="#"><span class="icon icon-tw"></span></a></li>
+                        <li><a class="card-footer_link" href="#"><span class="icon icon-insta1"></span></a></li>
+                        <li><a class="card-footer_link" href="#"><span class="icon icon-lin1"></span></a></li>
+                      </ul>
+                    </div>
+                  </section>
+      
+      </main>
+      </div>
+      <div style="background-color:rgb(53,194,151);">
+    <div class="grennbox">
+            <div class="container">
+                    <section class="main">
+                      <img class="smp" src="images/sample-300.jpg">
+                    </section>
+                    <section class="side">
+                      <h2>サンプル商品です</h2>
+                      <p>サンプル、サンプルsample!</p>
+                    </section>
+                  </div>
+
+                  <div class="container">
+                        <section class="main">
+                          <img class="smp" src="images/sample-300.jpg">
+                        </section>
+                        <section class="side">
+                          <h2>サンプル商品です</h2>
+                          <p>サンプル、サンプルsample!</p>
+                        </section>
+                      </div>
+
+                      <div class="container">
+                            <section class="main">
+                              <img class="smp" src="images/sample-300.jpg">
+                            </section>
+                            <section class="side">
+                              <h2>サンプル商品です</h2>
+                              <p>サンプル、サンプルsample!</p>
+                            </section>
+                          </div>
+                  
+                      </div>
+
+                      <!-- 0番目のカレンダーを入れる箱ね -->
+		<div id="cal0" class="cal_wrapper">
+                Calendar Loading
+            </div>
+            <div class="schedule_wrapper">
+                <h3>予定表</h3>
+                <!-- 0番目の予定リストを表示する場合は以下のタグを配置 -->
+                <div id="schedule0" class="schedule_list">
+                    <ol>
+                        <li value="210">テスト</li>
+                    </ol>
+                </div>
+            </div>
+            <!-- 1番目のカレンダーを入れる箱ね -->
+            <div id="cal1" class="cal_wrapper">
+                Calendar Loading
+            </div>
+            <script type="text/javascript" charset="UTF-8" src="cal.js"></script>
+
+                      
+                            
+                            
+                      </div>
 
 
-
-
-	</body>
-
-	</html>
-	<?php
-	////////////////////////////////////////////////
-	//// PDO DB接続がNGの場合
-	////////////////////////////////////////////////
-	
-?>
+<script>
+  $('.single').slick({
+    dots: true,
+  infinite: true,
+  autoplay: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+    
+  });
+</script>
+</body>
+</html>
