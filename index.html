@@ -22,6 +22,9 @@
 
 <link rel="stylesheet" href="cal.css" type="text/css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+<script scr="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
 
 
 
@@ -51,17 +54,38 @@
 
 
 <div class="container3">
-        <div class="item3"><img src="img/home-icon.png" alt="home" width=80%;><p>ホーム</p></div>
-        <div class="item3"><img src="img/news-icon.png" alt="news" width=80%;><p>ニュース</p></div>
-        <div class="item3"><img src="img/staff-icon.png" alt="home" width=80%;><p>staff紹介</p></div>
-        <div class="item3"><img src="img/shop-icon.png" alt="shop" width=80%;><p>お店紹介</p></div>
-        <div class="item3"><img src="img/photo-icon.png" alt="photo" width=80%;><p>ギャラリー</p></div>
-        <div class="item3"><img src="img/mail-icon.png" alt="hmail" width=80%;><p>お問合わせ</p></div>
+        <div class="item3"><p>ホーム</p></div>
+        <div class="item3"><p>ニュース</p></div>
+        <div class="item3"><p>staff紹介</p></div>
+        <div class="item3"><p>お店紹介</p></div>
+        <div class="item3"><p>ギャラリー</p></div>
+        <div class="item3"><p>お問合わせ</p></div>
 </div>
 
 
 
 <div style="background-color: rgb(255,145,145)">
+
+
+  <!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="images/1.jpg"></div>
+        <div class="swiper-slide"><img src="images/2.jpg"></div>
+        <div class="swiper-slide"><img src="images/3.jpg"></div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+
 <main role="main" class="main-wrapper">
 
         <h>お店からのお知らせ</h>
@@ -157,6 +181,9 @@
       
       </main>
       </div>
+
+     
+
       <div style="background-color:rgb(53,194,151);">
     <div class="grennbox">
             <div class="container">
@@ -226,6 +253,16 @@
   adaptiveHeight: true
     
   });
+</script>
+
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+	effect: "flip",
+	loop: true,
+	pagination: '.swiper-pagination',
+	nextButton: '.swiper-button-next',
+	prevButton: '.swiper-button-prev'
+}) 
 </script>
 </body>
 </html>
