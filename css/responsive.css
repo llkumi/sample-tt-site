@@ -153,6 +153,8 @@
 
 @media (max-width: 991.98px) {
 
+	#top-cart { display: none; }
+
 	#wrapper {
 		width: 100%;
 		margin: 0;
@@ -1548,6 +1550,8 @@
 	#primary-menu-trigger { left: 20px; }
 
 	#top-cart { display: none; }
+
+	#top-search { display: none; }
 
 	#top-search a { right: 40px; }
 

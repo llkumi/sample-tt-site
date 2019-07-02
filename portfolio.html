@@ -130,18 +130,49 @@
 
 		</header><!-- #header end -->
 
-		<section id="slider" class="slider-element slider-parallax" style="background-color: #222;">
+		<!-- Page Sub Menu
+		============================================= -->
+		<div id="page-menu" class="no-sticky">
 
-			<div id="oc-slider" class="owl-carousel carousel-widget" data-margin="0" data-items="1" data-pagi="false" data-loop="true" data-animate-in="rollIn" data-speed="450" data-animate-out="rollOut" data-autoplay="5000">
+			<div id="page-menu-wrap">
 
-				<a href="#"><img src="images/slider/full/01.jpg" alt="Slider"></a>
-				<a href="#"><img src="images/slider/full/02.jpg" alt="Slider"></a>
-				<a href="#"><img src="images/slider/full/03.jpg" alt="Slider"></a>
-				<a href="#"><img src="images/slider/full/04.jpg" alt="Slider"></a>
+				<div class="container clearfix">
+
+					<div class="menu-title">Portfolio <span>Variations</span></div>
+
+					<nav>
+						<ul>
+							<li class="current"><a href="portfolio.html"><div>With Margin</div></a></li>
+							<li><a href="portfolio-nomargin.html"><div>No Margin</div></a></li>
+							<li><a href="portfolio-notitle.html"><div>No Title</div></a></li>
+							<li><a href="portfolio-title-overlay.html"><div>Title Overlay</div></a></li>
+							<li><a href="portfolio-fullwidth.html"><div>Full Width</div></a></li>
+							<li><a href="portfolio-fullwidth-notitle.html"><div>Full Width - No Title</div></a></li>
+						</ul>
+					</nav>
+
+				<div id="page-submenu-trigger"><i class="icon-reorder"></i></div>
+
+				</div>
 
 			</div>
 
-		</section>
+		</div><!-- #page-menu end -->
+
+		<!-- Page Title
+		============================================= -->
+		<section id="page-title">
+
+			<div class="container clearfix">
+				<h1>商品紹介</h1>
+				<span>店内の商品を一部紹介します。購入は店頭までお願いします。</span>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">ホーム</a></li>
+					<li class="breadcrumb-item active" aria-current="page">商品紹介</li>
+				</ol>
+			</div>
+
+		</section><!-- #page-title end -->
 
 		<!-- Content
 		============================================= -->
@@ -149,119 +180,215 @@
 
 			<div class="content-wrap">
 
-				
-				<h1 style="text-align: center;">お店からのお知らせ</h1>
-				<div id="portfolio" class="portfolio grid-container portfolio-3 clearfix">
+				<div class="container clearfix">
+
+					<!-- Portfolio Filter
+					============================================= -->
+					<ul class="portfolio-filter clearfix" data-container="#portfolio">
+
+						<li class="activeFilter"><a href="#" data-filter="*">Show All</a></li>
+						<li><a href="#" data-filter=".pf-icons">Icons</a></li>
+						<li><a href="#" data-filter=".pf-illustrations">Illustrations</a></li>
+						<li><a href="#" data-filter=".pf-uielements">UI Elements</a></li>
+						<li><a href="#" data-filter=".pf-media">Media</a></li>
+						<li><a href="#" data-filter=".pf-graphics">Graphics</a></li>
+
+					</ul><!-- #portfolio-filter end -->
+
+					<div class="portfolio-shuffle" data-container="#portfolio">
+						<i class="icon-random"></i>
+					</div>
+
+					<div class="clear"></div>
+
+					<!-- Portfolio Items
+					============================================= -->
+					<div id="portfolio" class="portfolio grid-container clearfix">
 
 						<article class="portfolio-item matchHeight pf-media pf-icons">
-
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img src="images/portfolio/3/1.jpg" alt="Open Imagination">
+									<img src="images/portfolio/4/1.jpg" alt="Open Imagination">
 								</a>
-								
-								
 								
 							</div>
 							<div class="portfolio-desc">
-								<h3><a href="portfolio-single.html">サンプル画像です</a></h3>
-								<span><a href="#">新商品情報</a>, <a href="#">サンプルサンプルああああ</a></span>
+								<h3><a href="portfolio-single.html">サンプルラケット</a></h3>
+								<span><a href="#">racket</a></span>
 							</div>
-						
 						</article>
 
 						<article class="portfolio-item matchHeight pf-illustrations">
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img src="images/portfolio/3/2.jpg" alt="Locked Steel Gate">
+									<img src="images/portfolio/4/2.jpg" alt="Locked Steel Gate">
 								</a>
 								
 							</div>
 							<div class="portfolio-desc">
-								<h3><a href="portfolio-single.html">サンプル画像です</a></h3>
-								<span><a href="#">サンプルサンプル</a></span>
+								<h3><a href="portfolio-single.html">サンプルシューズ</a></h3>
+								<span><a href="#">shoes</a></span>
 							</div>
-						
 						</article>
 
 						<article class="portfolio-item matchHeight pf-graphics pf-uielements">
-							
 							<div class="portfolio-image">
 								<a href="#">
-									<img src="images/portfolio/3/3.jpg" alt="Mac Sunglasses">
+									<img src="images/portfolio/4/3.jpg" alt="Mac Sunglasses">
 								</a>
 								
 							</div>
 							<div class="portfolio-desc">
-								<h3><a href="portfolio-single-video.html">サンプル画像です</a></h3>
-								<span><a href="#">講演会情報</a>, <a href="#">講演会サンプル画像です。</a></span>
+								<h3><a href="portfolio-single-video.html">サンプルユニ</a></h3>
+								<span><a href="#">uniform</a>, <a href="#">運動着</a></span>
 							</div>
-						
 						</article>
-						</div>
-					</div>
-				</div>
-					<div class="line"></div>
 
-					<div class="content-wrap" style="">
-
-				
-							<h1 style="text-align: center;">商品紹介</h1>
-							<div id="portfolio" class="portfolio grid-container portfolio-3 clearfix">
-			
-									<article id="sample_box" class="portfolio-item matchHeight pf-media pf-icons">
-			
-											
-										<div class="portfolio-image">
-											<a href="portfolio-single.html">
-												<img src="images/portfolio/3/1.jpg" alt="Open Imagination">
-											</a>
-											
-											
-											
+						<article class="portfolio-item matchHeight pf-icons pf-illustrations">
+							<div class="portfolio-image">
+								<div class="fslider" data-arrows="false" data-speed="400" data-pause="4000">
+									<div class="flexslider">
+										<div class="slider-wrap">
+											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/portfolio/4/4.jpg" alt="Morning Dew"></a></div>
+											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/portfolio/4/4-1.jpg" alt="Morning Dew"></a></div>
 										</div>
-										<div class="portfolio-desc">
-											<h3><a href="portfolio-single.html">サンプル画像です</a></h3>
-											<span><a href="#">新商品情報</a>, <a href="#">サンプルサンプルああああ</a></span>
-										</div>
-									
-									</article>
-			
-									<article class="portfolio-item matchHeight pf-illustrations">
-											
-										<div class="portfolio-image">
-											<a href="portfolio-single.html">
-												<img src="images/02.jpg" alt="Locked Steel Gate">
-											</a>
-											
-										</div>
-										<div class="portfolio-desc">
-											<h3><a href="portfolio-single.html">サンプル画像です</a></h3>
-											<span><a href="#">サンプルサンプル</a></span>
-										</div>
-									
-									</article>
-			
-									<article class="portfolio-item matchHeight pf-graphics pf-uielements">
-										
-										<div class="portfolio-image">
-											<a href="#">
-												<img src="images/portfolio/3/3.jpg" alt="Mac Sunglasses">
-											</a>
-											
-										</div>
-										<div class="portfolio-desc">
-											<h3><a href="portfolio-single-video.html">サンプル画像です</a></h3>
-											<span><a href="#">講演会情報</a>, <a href="#">講演会サンプル画像です。</a></span>
-										</div>
-									
-									</article>
 									</div>
 								</div>
-						
-						
+								
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single-gallery.html">サンプルラバー</a></h3>
+								<span><a href="#">ラバー</a></span>
+							</div>
+						</article>
 
-			
+						<article class="portfolio-item matchHeight pf-uielements pf-media">
+							<div class="portfolio-image">
+								<a href="portfolio-single.html">
+									<img src="images/portfolio/4/5.jpg" alt="Console Activity">
+								</a>
+								
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single.html">Console Activity</a></h3>
+								<span><a href="#">UI Elements</a>, <a href="#">Media</a></span>
+							</div>
+						</article>
+
+						<article class="portfolio-item matchHeight pf-graphics pf-illustrations">
+							<div class="portfolio-image">
+								<div class="fslider" data-arrows="false">
+									<div class="flexslider">
+										<div class="slider-wrap">
+											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/portfolio/4/6.jpg" alt="Shake It"></a></div>
+											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/portfolio/4/6-1.jpg" alt="Shake It"></a></div>
+											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/portfolio/4/6-2.jpg" alt="Shake It"></a></div>
+											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/portfolio/4/6-3.jpg" alt="Shake It"></a></div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single-gallery.html">Shake It!</a></h3>
+								<span><a href="#">Illustrations</a>, <a href="#">Graphics</a></span>
+							</div>
+						</article>
+
+						<article class="portfolio-item matchHeight pf-uielements pf-icons">
+							<div class="portfolio-image">
+								<a href="portfolio-single-video.html">
+									<img src="images/portfolio/4/7.jpg" alt="Backpack Contents">
+								</a>
+								
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single-video.html">Backpack Contents</a></h3>
+								<span><a href="#">UI Elements</a>, <a href="#">Icons</a></span>
+							</div>
+						</article>
+
+						<article class="portfolio-item matchHeight pf-graphics">
+							<div class="portfolio-image">
+								<a href="portfolio-single.html">
+									<img src="images/portfolio/4/8.jpg" alt="Sunset Bulb Glow">
+								</a>
+								
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single.html">Sunset Bulb Glow</a></h3>
+								<span><a href="#">Graphics</a></span>
+							</div>
+						</article>
+
+						<article class="portfolio-item matchHeight pf-illustrations pf-icons">
+							<div class="portfolio-image">
+								<div class="fslider" data-arrows="false" data-speed="650" data-pause="3500" data-animation="fade">
+									<div class="flexslider">
+										<div class="slider-wrap">
+											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/portfolio/4/9.jpg" alt="Bridge Side"></a></div>
+											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/portfolio/4/9-1.jpg" alt="Bridge Side"></a></div>
+											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/portfolio/4/9-2.jpg" alt="Bridge Side"></a></div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single.html">Bridge Side</a></h3>
+								<span><a href="#">Illustrations</a>, <a href="#">Icons</a></span>
+							</div>
+						</article>
+
+						<article class="portfolio-item matchHeight pf-graphics pf-media pf-uielements">
+							<div class="portfolio-image">
+								<a href="portfolio-single-video.html">
+									<img src="images/portfolio/4/10.jpg" alt="Study Table">
+								</a>
+								
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single-video.html">Study Table</a></h3>
+								<span><a href="#">Graphics</a>, <a href="#">Media</a></span>
+							</div>
+						</article>
+
+						<article class="portfolio-item matchHeight pf-media pf-icons">
+							<div class="portfolio-image">
+								<a href="portfolio-single.html">
+									<img src="images/portfolio/4/11.jpg" alt="Workspace Stuff">
+								</a>
+								
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single.html">Workspace Stuff</a></h3>
+								<span><a href="#">Media</a>, <a href="#">Icons</a></span>
+							</div>
+						</article>
+
+						<article class="portfolio-item matchHeight pf-illustrations pf-graphics">
+							<div class="portfolio-image">
+								<div class="fslider" data-arrows="false" data-speed="700" data-pause="7000">
+									<div class="flexslider">
+										<div class="slider-wrap">
+											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/portfolio/4/12.jpg" alt="Fixed Aperture"></a></div>
+											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/portfolio/4/12-1.jpg" alt="Fixed Aperture"></a></div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="portfolio-single-gallery.html">Fixed Aperture</a></h3>
+								<span><a href="#">Illustrations</a>, <a href="#">Graphics</a></span>
+							</div>
+						</article>
+
+		</section><!-- #portfolio end -->
+
+				</div>
+
+			</div>
 
 		</section><!-- #content end -->
 
